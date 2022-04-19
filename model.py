@@ -4,7 +4,7 @@ import datetime
 import pandas as pd
  
 # load it back in.
-with open('/mnt/artifacts/my_linear_regression.sav', 'rb') as pickle_file:
+with open('/mnt/code/my_linear_regression.sav', 'rb') as pickle_file:
      regression_model_2 = pickle.load(pickle_file)
  
 # make a new prediction.
