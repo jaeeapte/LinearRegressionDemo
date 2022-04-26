@@ -11,7 +11,7 @@ with open('/mnt/code/my_linear_regression.sav', 'rb') as pickle_file:
 def predict(value):
     prediction = regression_model_2.predict([[value]])
     predicted_value = prediction[0][0]
-    print("For a barrel of oil that costs - ", value, ", the predicted value of stock price is - " , predicted_value)
+    print("For a barrel of oil that costs - ", value, ", the predicted value of stock price is - {:.4}".format(predicted_value))
 
 #arg = sys.argv[1]
 #predict(float(arg))
