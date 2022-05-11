@@ -61,7 +61,7 @@ model_r2 = r2_score(y_test, y_predict)
  
 #display the output in Domino
 import json
-with open('dominostats.json', 'w') as f:
+with open('/mnt/artifacts/dominostats.json', 'w') as f:
     f.write(json.dumps({"Days Used for Training":num_days, "R^2": model_r2, "RMSE": model_rmse}))
  
  
